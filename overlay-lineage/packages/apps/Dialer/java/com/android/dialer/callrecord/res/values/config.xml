@@ -15,6 +15,16 @@
      limitations under the License.
 -->
 <resources>
+<<<<<<< HEAD:overlay-lineage/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml
     <bool name="call_recording_enabled">true</bool>
     <integer name="call_recording_audio_source">4</integer>
+=======
+
+    <string name="refresh_rate_settings_title">Mi 10T/10T Pro Specific Settings</string>
+    <string name="device_refresh_rate">Refresh Rate</string>
+
+    <string name="dt2w_enable_title">Double-Tap to Wake </string>
+    <string name="dt2w_enable_summary">Double-tap on lockscreen to wake device</string>
+
+>>>>>>> 6e101e2... apollo: parts: Add touchfeature impl of dt2w:parts/res/values/strings.xml
 </resources>
