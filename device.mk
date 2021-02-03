@@ -283,10 +283,9 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Lights
+# Light
 PRODUCT_PACKAGES += \
-    lights.kona \
-    android.hardware.lights-service.qti
+    android.hardware.light@2.0-service.xiaomi_alioth
 
 # Media
 PRODUCT_PACKAGES += \
