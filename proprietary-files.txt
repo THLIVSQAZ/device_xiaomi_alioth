@@ -789,14 +789,8 @@ vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/etc/permissions/com.fingerprints.extension.xml
--vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
--vendor/framework/com.fingerprints.extension.jar
-vendor/lib/hw/fingerprint.fpc.so
-vendor/lib64/hw/fingerprint.fpc.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+vendor/lib/hw/fingerprint.fpc.so:vendor/lib/hw/fingerprint.fpc.kona.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.kona.so
 
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so
