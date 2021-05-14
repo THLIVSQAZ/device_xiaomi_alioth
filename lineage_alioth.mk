@@ -25,4 +25,4 @@ PRODUCT_MODEL := Redmi K40
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Redmi/alioth/alioth:11/RKQ1.200826.002/V12.0.7.0.RKHCNXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/alioth/alioth:11/RKQ1.200826.002/V12.5.2.0.RKHCNXM:user/release-keys
