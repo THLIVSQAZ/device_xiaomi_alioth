@@ -41,6 +41,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Kernel
+$(call inherit-product, device/xiaomi/alioth-kernel/kernel.mk)
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -509,14 +512,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# Kernel header
-PRODUCT_VENDOR_KERNEL_HEADERS := $(LOCAL_PATH)/prebuilt/kernel-headers
-
-# Kernel Modules
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
