@@ -24,6 +24,7 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -56,6 +57,21 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.display" />
+        </activity>
+
+        <activity
+            android:name=".DevicePreferenceActivity"
+            android:label="@string/device_specific_settings_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+             <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/device_specific_settings_summary" />
         </activity>
 
         <activity
